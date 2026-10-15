@@ -1,12 +1,36 @@
 <h1 align="center">voice-out</h1>
 
 <p align="center">
-  Claude Code already lets you talk to it with <code>/voice</code>.<br/>
-  This plugin makes it talk back - and lets you cut it off mid-sentence
-  by holding the spacebar.
+  A voice interface for Claude Code on Windows: it talks back the moment<br/>
+  it's done, and you can cut it off mid-sentence just by holding the spacebar.
 </p>
 
 ---
+
+## Why this exists
+
+Typing is the bottleneck in an agentic coding session, not thinking.
+Conversational speech runs roughly 130-150 words a minute; typing is closer
+to 40. That's a real 3-4x gap between how fast you can get an idea out of
+your head and how fast you can type it into a prompt - a long-documented
+fact about speech versus typing, not a marketing number.
+
+The other half of the problem is dead air. You ask Claude Code to do
+something, then watch a cursor while it reads files, runs tests, or greps a
+codebase. That's pure downtime if you're chained to the screen just to catch
+the moment it finishes. voice-out removes that side of it: it speaks the
+reply the instant it's ready, so you can step away in the room - refill your
+coffee, stretch, glance at something else - and still know exactly when it's
+done and what it found, instead of babysitting a scrollback.
+
+Faster in, passive out. You're not reading walls of text end-to-end anymore,
+and you're not stuck staring at a terminal just to know when to look back.
+That's real time back on every single turn.
+
+**One honest limit:** giving Claude Code a *new* instruction still needs a
+hand on the keyboard - Claude Code's own `/voice` records while you hold
+spacebar, and this plugin doesn't change that side. What it changes is
+everything *after* you've asked: the answer comes back by ear, not by eye.
 
 ## What it does
 
