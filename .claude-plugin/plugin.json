@@ -1,0 +1,10 @@
+{
+  "name": "voice-out",
+  "version": "0.1.0",
+  "description": "Hands-free voice replies for Claude Code on Windows: speaks every reply aloud, and lets you hold the spacebar anywhere to interrupt it mid-sentence.",
+  "author": {
+    "name": "thisismairaj",
+    "url": "https://github.com/thisismairaj"
+  },
+  "license": "MIT"
+}

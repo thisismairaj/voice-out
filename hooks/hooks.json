@@ -1,0 +1,29 @@
+{
+  "description": "Speaks each reply aloud when Claude finishes (Stop), and interrupts any speech in progress the instant a new prompt is submitted (UserPromptSubmit).",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pythonw",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/hook_stop.py"],
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pythonw",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/stop.py"],
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
